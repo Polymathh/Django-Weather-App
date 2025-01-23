@@ -1,4 +1,4 @@
-const apiKey = 'ed02e9a8a3fbfa99c0ec7e0cb49d0eb6';
+
 const searchBtn = document.getElementById('search-btn');
 const cityInput = document.getElementById('city-input');
 const weatherInfo = document.getElementById('weather-info');
@@ -6,7 +6,7 @@ const weatherInfo = document.getElementById('weather-info');
 searchBtn.addEventListener('click', async () => {
     const city = cityInput.value.trim();
     if (!city) {
-        weatherInfo.innerHTML = 'Please a city name.';
+        weatherInfo.innerHTML = 'Please enter a city name.';
         return;
     }
 
